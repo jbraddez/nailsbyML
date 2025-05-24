@@ -7,6 +7,7 @@ main{
 }
 
 .serviceCont{
+    position: relative;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -15,9 +16,23 @@ main{
     max-width: 800px;
     width: 100%;
     margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.name_arrow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name_arrow svg{
+    fill: #000;
+    width: 2rem;
+    height: 100%;
 }
 
 .card{
+    cursor: default;
     width: 100%;
     display: flex;
     align-items: center;
@@ -48,10 +63,6 @@ ul{
     cursor: pointer;
 }
 
-.hidden{
-    display: none;
-}
-
 .showDesc:hover{
     background: #d4b895;
 }
@@ -80,4 +91,8 @@ ul{
     flex-direction: row-reverse;
     gap: 0.5rem;
     align-items: center;
+}
+
+.hidden{
+    display: none;
 }

@@ -31,8 +31,11 @@
     <main>
         <h1>My Nails Services</h1>
         <div class="serviceCont">
-            <h2>Gel Polish</h2>
-            <div class="card noborder">
+            <div class="name_arrow">
+                <h2>Gel Polish</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+            </div>
+            <div class="card noborder hidden">
                 <div>
                     <p class="name">Plain Gel Polish</p>
                 </div>
@@ -41,7 +44,7 @@
                     <p class="time">30min</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card hidden">
                 <div>
                     <p class="name">Gel Polish & Level 1 Nail Art</p>
                     <button onclick="document.getElementById('polish_lvl1').classList.toggle('hidden')" class="showDesc">Show Description</button>
@@ -62,7 +65,7 @@
                     <p class="time">30min</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card hidden">
                 <div>
                     <p class="name">Gel Polish & Level 2 Nail Art</p>
                     <button onclick="document.getElementById('polish_lvl2').classList.toggle('hidden')" class="showDesc">Show Description</button>
@@ -87,23 +90,33 @@
                 </div>
             </div>
 
-            <div class="card insideCards">
+            <div class="card hidden">
+                <div>
+                    <p class="name">Gel Polish Removal</p>
+                </div>
+                <div>
+                    <p class="price">£10.00</p>
+                    <p class="time">20min</p>
+                </div>
+            </div>
+
+            <div class="card insideCards hidden">
                 <p class="name">Gel Polish Removal & Redone</p>
-                <div class="card">
+                <div class="card hidden">
                     <p class="name">Plain Gel Polish</p>
                     <div>
                         <p class="price">£28.00</p>
                         <p class="time">40min</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card hidden">
                     <p class="name">Level 1 Nail Art</p>
                     <div>
                         <p class="price">£30.00</p>
                         <p class="time">45min</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card hidden">
                     <p class="name">Level 2 Nail Art</p>
                     <div>
                         <p class="price">£33.00</p>
@@ -112,10 +125,36 @@
                 </div>
             </div>
         </div>
+
+        <div class="serviceCont">
+            <div class="name_arrow">
+                <h2>Builder Gel</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+            </div>
+            <div class="card noborder hidden">
+                <div>
+                    <p class="name">Plain Builder Gel</p>
+                </div>
+                <div>
+                    <p class="price">£30.00</p>
+                    <p class="time">45min</p>
+                </div>
+            </div>
+            <div class="card hidden">
+                <div>
+                    <p class="name">Builder Gel with Plain Gel Polish</p>
+                </div>
+                <div>
+                    <p class="price">£32.00</p>
+                    <p class="time">1hr</p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <a href="/#contact" id="floatingButHome" style="display: block;" class="book-now floating">Book Now</a>
 
     <script src="script.js"></script>
+    <script src="nails_beauty.js"></script>
 </body>  
 </html>
