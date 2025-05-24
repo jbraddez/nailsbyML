@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nails, Aesthetics & Training By ML</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" href="/images/icon.webp" type="image/webp">
+    <link rel="stylesheet" href="/styles/nails_beauty.css">
+    <!--SEO-->
+
+    <!--SEO end-->
+</head>
+<body>
+    <nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a href="/"><img src="/images/logo.webp" alt="Nails, Aesthetics & Training By ML" class="mobile-logo"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li><!--remove html for htaccess-->
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="nails.html" class="active">Nails</a></li>
+        <li><a href="beauty.html">Beauty</a></li>
+        <li><a href="training.html">Training</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <h1>My Nails Services</h1>
+        <div class="serviceCont">
+            <h2>Gel Polish</h2>
+            <div class="card noborder">
+                <div>
+                    <p class="name">Plain Gel Polish</p>
+                </div>
+                <div>
+                    <p class="price">£20.00</p>
+                    <p class="time">30min</p>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <p class="name">Gel Polish & Level 1 Nail Art</p>
+                    <button onclick="document.getElementById('polish_lvl1').classList.toggle('hidden')" class="showDesc">Show Description</button>
+                    <div id="polish_lvl1" class="hidden">
+                        <p class="desc">Level 1 Nail Art include</p>
+                    <ul>
+                        <li>Swirls/Line Work</li>
+                        <li>Dots</li>
+                        <li>Hearts</li>
+                        <li>Simple Flowers</li>
+                        <li>Accent Nail</li>
+                        <li>French Tip</li>
+                    </ul>
+                    </div>
+                </div>
+                <div>
+                    <p class="price">£25.00+</p>
+                    <p class="time">30min</p>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <p class="name">Gel Polish & Level 2 Nail Art</p>
+                    <button onclick="document.getElementById('polish_lvl2').classList.toggle('hidden')" class="showDesc">Show Description</button>
+                    <div id="polish_lvl2" class="hidden">
+                        <p class="desc">Level 2 Nail Art include</p>
+                    <ul>
+                        <li>Animal Print</li>
+                        <li>Flames</li>
+                        <li>Gems/Pearls/Charms</li>
+                        <li>Ombré</li>
+                        <li>Foil</li>
+                        <li>Floral</li>
+                        <li>Small Characters</li>
+                        <li>Mix n Match</li>
+                        <li>Marble</li>
+                    </ul>
+                    </div>
+                </div>
+                <div>
+                    <p class="price">£28.00</p>
+                    <p class="time">40min</p>
+                </div>
+            </div>
+
+            <div class="card insideCards">
+                <p class="name">Gel Polish Removal & Redone</p>
+                <div class="card">
+                    <p class="name">Plain Gel Polish</p>
+                    <div>
+                        <p class="price">£28.00</p>
+                        <p class="time">40min</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="name">Level 1 Nail Art</p>
+                    <div>
+                        <p class="price">£30.00</p>
+                        <p class="time">45min</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="name">Level 2 Nail Art</p>
+                    <div>
+                        <p class="price">£33.00</p>
+                        <p class="time">45min</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <a href="/#contact" id="floatingButHome" style="display: block;" class="book-now floating">Book Now</a>
+
+    <script src="script.js"></script>
+</body>  
+</html>
