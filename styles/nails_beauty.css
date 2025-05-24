@@ -4,6 +4,7 @@ main{
     align-items: center;
     justify-content: center;
     padding: 0 0.5rem;
+    width: 100%;
 }
 
 .serviceCont{
@@ -46,7 +47,7 @@ main{
 }
 
 .desc{color: #6c757d;font-size: 0.8rem; }
-ul{
+.serviceCont ul{
     color: #6c757d;
     margin-left: 2rem;
     font-size: 0.8rem;
@@ -72,7 +73,7 @@ ul{
 }
 
 .time,.price{
-    text-align: center;
+    text-align: right;
 }
 .insideCards{
     display: flex;
@@ -82,7 +83,8 @@ ul{
 
 .insideCards .card{
     border-top: 0;
-    padding: 0.3rem 0.5rem;
+    padding: 0.5rem;
+    padding-right: 0;
     font-size: 0.9rem;
 }
 
