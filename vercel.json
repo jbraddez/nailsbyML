@@ -1,0 +1,10 @@
+{
+    "rewrites": [
+      { "source": "/gallery", "destination": "/gallery.html" },
+      { "source": "/nails", "destination": "/nails.html" },
+      { "source": "/beauty", "destination": "/beauty.html" },
+      { "source": "/training", "destination": "/training.html" },
+      { "source": "/index", "destination": "/" }
+    ]
+  }
+  
