@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^index/?$ / [R=301,L]
+
+RewriteRule ^gallery/?$ gallery.html [NC,L]
+RewriteRule ^nails/?$ nails.html [NC,L]
+RewriteRule ^beauty/?$ beauty.html [NC,L]
+RewriteRule ^training/?$ training.html [NC,L]
+
+DirectoryIndex index.html
