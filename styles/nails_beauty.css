@@ -13,15 +13,17 @@ main{
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
     transition: transform 0.3s ease;
     max-width: 800px;
     width: 100%;
+    padding-bottom: 0.5rem;
     margin-bottom: 2rem;
     cursor: pointer;
 }
 
 .name_arrow{
+    padding: 2rem;
+    padding-bottom: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,7 +37,8 @@ main{
 
 .card{
     cursor: default;
-    width: 100%;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;

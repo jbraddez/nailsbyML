@@ -49,12 +49,12 @@
 
     <main>
         <h1>My Nails Services</h1>
-        <div class="serviceCont">
-            <div class="name_arrow">
+        <details class="serviceCont">
+            <summary class="name_arrow">
                 <h2>Gel Polish</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-            </div>
-            <div class="card noborder hidden">
+            </summary>
+            <div class="card noborder">
                 <div>
                     <p class="name">Plain Gel Polish</p>
                 </div>
@@ -63,12 +63,12 @@
                     <p class="time">30min</p>
                 </div>
             </div>
-            <div class="card hidden">
+            <div class="card">
                 <div>
                     <p class="name">Gel Polish & Level 1 Nail Art</p>
                     <button onclick="document.getElementById('polish_lvl1').classList.toggle('hidden')" class="showDesc">Show Description</button>
                     <div id="polish_lvl1" class="hidden">
-                        <p class="desc">Level 1 Nail Art include</p>
+                        <p class="desc">Level 1 Nail Art includes</p>
                     <ul>
                         <li>Swirls/Line Work</li>
                         <li>Dots</li>
@@ -84,12 +84,12 @@
                     <p class="time">30min</p>
                 </div>
             </div>
-            <div class="card hidden">
+            <div class="card">
                 <div>
                     <p class="name">Gel Polish & Level 2 Nail Art</p>
                     <button onclick="document.getElementById('polish_lvl2').classList.toggle('hidden')" class="showDesc">Show Description</button>
                     <div id="polish_lvl2" class="hidden">
-                        <p class="desc">Level 2 Nail Art include</p>
+                        <p class="desc">Level 2 Nail Art includes</p>
                     <ul>
                         <li>Animal Print</li>
                         <li>Flames</li>
@@ -109,7 +109,7 @@
                 </div>
             </div>
 
-            <div class="card hidden">
+            <div class="card">
                 <div>
                     <p class="name">Gel Polish Removal</p>
                 </div>
@@ -119,23 +119,23 @@
                 </div>
             </div>
 
-            <div class="card insideCards hidden">
+            <div class="card insideCards">
                 <p class="name">Gel Polish Removal & Redone</p>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Plain Gel Polish</p>
                     <div>
                         <p class="price">£28.00</p>
                         <p class="time">40min</p>
                     </div>
                 </div>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Level 1 Nail Art</p>
                     <div>
                         <p class="price">£30.00</p>
                         <p class="time">45min</p>
                     </div>
                 </div>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Level 2 Nail Art</p>
                     <div>
                         <p class="price">£33.00</p>
@@ -143,14 +143,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </details>
 
-        <div class="serviceCont">
-            <div class="name_arrow">
+        <details class="serviceCont">
+            <summary class="name_arrow">
                 <h2>Builder Gel</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-            </div>
-            <div class="card noborder hidden">
+            </summary>
+            <div class="card noborder">
                 <div>
                     <p class="name">Plain Builder Gel</p>
                 </div>
@@ -159,7 +159,7 @@
                     <p class="time">45min</p>
                 </div>
             </div>
-            <div class="card hidden">
+            <div class="card">
                 <div>
                     <p class="name">Builder Gel with Plain Gel Polish</p>
                 </div>
@@ -168,12 +168,12 @@
                     <p class="time">1hr</p>
                 </div>
             </div>
-            <div class="card hidden">
+            <div class="card">
                 <div>
                     <p class="name">Builder Gel & Level 1 Nail Art</p>
                     <button onclick="document.getElementById('builder_lvl1').classList.toggle('hidden')" class="showDesc">Show Description</button>
                     <div id="builder_lvl1" class="hidden">
-                        <p class="desc">Level 1 Nail Art include</p>
+                        <p class="desc">Level 1 Nail Art includes</p>
                     <ul>
                         <li>Swirls/Line Work</li>
                         <li>Dots</li>
@@ -189,12 +189,12 @@
                     <p class="time">1hr 15m</p>
                 </div>
             </div>
-            <div class="card hidden">
+            <div class="card">
                 <div>
                     <p class="name">Builder Gel & Level 2 Nail Art</p>
                     <button onclick="document.getElementById('builder_lvl2').classList.toggle('hidden')" class="showDesc">Show Description</button>
                     <div id="builder_lvl2" class="hidden">
-                        <p class="desc">Level 2 Nail Art include</p>
+                        <p class="desc">Level 2 Nail Art includes</p>
                     <ul>
                         <li>Animal Print</li>
                         <li>Flames</li>
@@ -213,12 +213,12 @@
                     <p class="time">1hr 20m</p>
                 </div>
             </div>
-            <div class="card hidden">
+            <div class="card">
                 <div>
                     <p class="name">Builder Gel & Level 3 Nail Art</p>
                     <button onclick="document.getElementById('builder_lvl3').classList.toggle('hidden')" class="showDesc">Show Description</button>
                     <div id="builder_lvl3" class="hidden">
-                        <p class="desc">Level 3 Nail Art include</p>
+                        <p class="desc">Level 3 Nail Art includes</p>
                     <ul>
                         <li>Detailed Designs</li>
                         <li>Detailed Characters</li>
@@ -232,37 +232,37 @@
                     <p class="time">1hr 40m</p>
                 </div>
             </div>
-            <div class="card insideCards hidden">
+            <div class="card insideCards">
                 <p class="name">Builder Gel Infills</p>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Plain Builder</p>
                     <div>
                         <p class="price">£30.00</p>
                         <p class="time">50min</p>
                     </div>
                 </div>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">With Plain Gel Polish</p>
                     <div>
                         <p class="price">£32.00</p>
                         <p class="time">1hr 10m</p>
                     </div>
                 </div>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Level 1 Nail Art</p>
                     <div>
                         <p class="price">£35.00</p>
                         <p class="time">1hr 20m</p>
                     </div>
                 </div>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Level 3 Nail Art</p>
                     <div>
                         <p class="price">£37.00</p>
                         <p class="time">1hr 30m</p>
                     </div>
                 </div>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Level 3 Nail Art</p>
                     <div>
                         <p class="price">£40.00+</p>
@@ -270,7 +270,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card hidden">
+            <div class="card">
                 <div>
                     <p class="name">Builder Gel Removal</p>
                     <p class="desc">Only £5.50 if with a new set from me!</p>
@@ -280,14 +280,14 @@
                     <p class="time">30min</p>
                 </div>
             </div>
-        </div>
+        </details>
 
-        <div class="serviceCont">
-            <div class="name_arrow">
+        <details class="serviceCont">
+            <summary class="name_arrow">
                 <h2>Acrylic Extensions</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-            </div>
-            <div class="card noborder hidden">
+            </summary>
+            <div class="card noborder">
                 <div>
                     <p class="name">Acrylic Nails Only</p>
                 </div>
@@ -296,7 +296,7 @@
                     <p class="time">1hr 10m</p>
                 </div>
             </div>
-            <div class="card hidden">
+            <div class="card">
                 <div>
                     <p class="name">Acrylic Nails with Plain Gel Polish</p>
                 </div>
@@ -305,12 +305,12 @@
                     <p class="time">1hr 20m</p>
                 </div>
             </div>
-            <div class="card hidden">
+            <div class="card">
                 <div>
                     <p class="name">Acrylic Nails & Level 1 Nail Art</p>
                     <button onclick="document.getElementById('acrylic_lvl1').classList.toggle('hidden')" class="showDesc">Show Description</button>
                     <div id="acrylic_lvl1" class="hidden">
-                        <p class="desc">Level 1 Nail Art include</p>
+                        <p class="desc">Level 1 Nail Art includes</p>
                     <ul>
                         <li>Swirls/Line Work</li>
                         <li>Dots</li>
@@ -326,12 +326,12 @@
                     <p class="time">1hr 35m</p>
                 </div>
             </div>
-            <div class="card hidden">
+            <div class="card">
                 <div>
                     <p class="name">Acrylic Nails & Level 2 Nail Art</p>
                     <button onclick="document.getElementById('acrylic_lvl2').classList.toggle('hidden')" class="showDesc">Show Description</button>
                     <div id="acrylic_lvl2" class="hidden">
-                        <p class="desc">Level 2 Nail Art include</p>
+                        <p class="desc">Level 2 Nail Art includes</p>
                     <ul>
                         <li>Animal Print</li>
                         <li>Flames</li>
@@ -350,12 +350,12 @@
                     <p class="time">1hr 45m</p>
                 </div>
             </div>
-            <div class="card hidden">
+            <div class="card">
                 <div>
                     <p class="name">Acrylic Nails & Level 3 Nail Art</p>
                     <button onclick="document.getElementById('acrylic_lvl3').classList.toggle('hidden')" class="showDesc">Show Description</button>
                     <div id="acrylic_lvl3" class="hidden">
-                        <p class="desc">Level 3 Nail Art include</p>
+                        <p class="desc">Level 3 Nail Art includes</p>
                     <ul>
                         <li>Detailed Designs</li>
                         <li>Detailed Characters</li>
@@ -369,37 +369,37 @@
                     <p class="time">2hr</p>
                 </div>
             </div>
-            <div class="card insideCards hidden">
+            <div class="card insideCards">
                 <p class="name">Builder Gel Infills</p>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Acrylic Only</p>
                     <div>
                         <p class="price">£30.00</p>
                         <p class="time">1hr 25min</p>
                     </div>
                 </div>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Gel Colour</p>
                     <div>
                         <p class="price">£32.00</p>
                         <p class="time">1hr 35m</p>
                     </div>
                 </div>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Level 1 Nail Art</p>
                     <div>
                         <p class="price">£35.00</p>
                         <p class="time">1hr 45m</p>
                     </div>
                 </div>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Level 3 Nail Art</p>
                     <div>
                         <p class="price">£37.00</p>
                         <p class="time">1hr 55m</p>
                     </div>
                 </div>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Level 3 Nail Art</p>
                     <div>
                         <p class="price">£40.00+</p>
@@ -407,7 +407,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card hidden">
+            <div class="card">
                 <div>
                     <p class="name">Acrylic Removal</p>
                     <p class="desc">Only £5.50 if with a new set from me!</p>
@@ -417,14 +417,14 @@
                     <p class="time">30min</p>
                 </div>
             </div>
-        </div>
+        </details>
 
-        <div class="serviceCont">
-            <div class="name_arrow">
+        <details class="serviceCont">
+            <summary class="name_arrow">
                 <h2>Toes</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
-            </div>
-            <div class="card hidden noborder">
+            </summary>
+            <div class="card noborder">
                 <div>
                     <p class="name">Builder Gel Toes</p>
                 </div>
@@ -433,16 +433,16 @@
                     <p class="time">1hr</p>
                 </div>
             </div>
-            <div class="card insideCards hidden">
+            <div class="card insideCards">
                 <p class="name">Gel Toes</p>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Gel Only</p>
                     <div>
                         <p class="price">£20.00</p>
                         <p class="time">20min</p>
                     </div>
                 </div>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Gel with French Tips</p>
                     <div>
                         <p class="price">£25.00</p>
@@ -450,16 +450,16 @@
                     </div>
                 </div>
             </div>
-            <div class="card insideCards hidden">
+            <div class="card insideCards">
                 <p class="name">Removal</p>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Gel</p>
                     <div>
                         <p class="price">£10.00</p>
                         <p class="time">20min</p>
                     </div>
                 </div>
-                <div class="card hidden">
+                <div class="card">
                     <p class="name">Acrylic/Builder</p>
                     <div>
                         <p class="price">£15.00</p>
@@ -467,7 +467,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </details>
     </main>
     
     <div class="socials">
@@ -487,6 +487,5 @@
     <a href="/#contact" id="floatingButHome" style="display: block;" class="book-now floating">Book Now</a>
 
     <script src="script.js"></script>
-    <script src="nails_beauty.js"></script>
 </body>  
 </html>
