@@ -29,14 +29,51 @@
     <meta name="apple-mobile-web-app-title" content="Nails By ML">
     <meta name="msapplication-TileColor" content="#d4b895">
     <meta name="msapplication-TileImage" content="/images/icon.webp">
+    <style>
+      nav{
+        position: fixed;
+        width: 100%;
+      }
+    </style>
 </head>
 <body>
+
+   <nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a href="/"><img src="/images/s-logo.webp" alt="Nails, Aesthetics & Training By ML" class="mobile-logo"></a>
+      <ul>
+        <li><a href="gallery">Gallery</a></li>
+        <li><a href="nails">Nails</a></li>
+        <li><a href="beauty">Beauty</a></li>
+        <li><a href="training">Training</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contact" class="book-now floating">Book Now</a>
     
 <section class="hero">
     <div class="hero-content">
       <img src="/images/logo.webp" type="image/webp" alt="Nails, Aesthetics & Training By ML">
-      <a href="#contact" class="btn-primary btn-center">Book Now</a>
     </div>
+  </section>
+
+  <main>
+  <section class="about">
+    <div class="row">
+      <div class="img">
+        <img class="salon-img" src="/images/salon.webp" alt="Inside the salon.">
+        <img class="about-logo" src="/images/s-logo.webp" alt="BY ML logo">
+      </div>
+      <div class="text">
+        <h1>About BY ML</h1>
+        <p>BY ML is a beauty and nail salon in Darlington, offering a range of treatments in a welcoming and relaxing environment. We are passionate about helping every client look and feel their best. <br><br>We also provide professional training courses in nails and beauty, designed to give you the skills and confidence to start your own journey in the industry. Whether you are here for a treatment or to train, you will leave feeling inspired and confident.</p>
+      </div>
+    </div>
+    
   </section>
   
   <section class="services">
@@ -89,7 +126,7 @@
     <a href="/gallery" class="btn-primary btn-center">See more...</a>
   </section>
 
-  <section class="reviews"></section> 
+  <section class="reviews"> 
   <template id="review-template">
     <div class="card">
       <div class="stars">
@@ -115,39 +152,32 @@
       <div class="author"></div>
     </div>
   </template>
-  
+  </section>
 
   <script src="/reviews.js"></script>
 
 
   <section class="contact" id="contact">
     <h2>Book Your Appointment</h2>
-    <!-- Elfsight Appointment Booking | Untitled Appointment Booking -->
-        <!--
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
-    <div class="elfsight-app-66921d29-182d-4ac0-bc00-baf664332895" data-elfsight-app-lazy></div>
-    -->
-
     <a target="_blank" href="https://booksy.com/en-gb/115525_nails-aesthetics-by-ml_nail-salon_509934_darlington" class="booksy-btn">
         <img src="/images/booksy.png" alt="Book now on Booksy" class="book-logo" />
         <p>Book Now</p>
       </a>
-      <a href="/book.html" class="btn-primary" style="margin:0 auto;">
-        <p>Book Now</p>
-      </a>
       <br>
       <h2>Got a question?</h2>
-    <form> <!--emailjs config-->
+       <form> <!--emailjs config-->
       <input type="text" placeholder="Full Name" required>
       <input type="email" placeholder="Email" required>
       <textarea placeholder="Your Message"></textarea>
       <button type="submit" class="btn-primary">Submit</button>
     </form>
-  </section>
+    </section>
 
+    <section class="map-sec">
   <iframe id="mapIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.36239604738748!2d-1.549774452283652!3d54.528797355516694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6f9152277d459df5%3A0x444311a1de86fca1!2sNails%20and%20Aesthetics%20By%20ML!5e0!3m2!1sen!2suk!4v1747947873266!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  
-  <a href="#contact" id="floatingButHome" class="book-now floating">Book Now</a>
+    </section>
+
+    </main>
 
   <div class="socials">
     <p>Follow me on social media!</p>
@@ -162,11 +192,6 @@
   <footer>
     <p>&copy; 2025 Nails, Aesthetics & Training By ML</p>
   </footer>
-  
-  <script>
-    document.addEventListener('scroll', ()=>{
-      document.getElementById('floatingButHome').style.display = 'block';
-    });
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
