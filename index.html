@@ -42,6 +42,8 @@
         position: fixed;
         width: 100%;
       }
+      .contact-text a{font-weight: 500;}
+      .contact-text a:hover{text-decoration: underline;}
     </style>
 </head>
 <body>
@@ -173,12 +175,13 @@
       </a>
       <br>
       <h2>Got a question?</h2>
-       <form> <!--emailjs config-->
+       <!--<form id="form"> 
       <input type="text" placeholder="Full Name" required>
       <input type="email" placeholder="Email" required>
       <textarea placeholder="Your Message"></textarea>
-      <button type="submit" class="btn-primary">Submit</button>
-    </form>
+      <button type="submit" id="submit-btn" class="btn-primary">Submit</button>
+    </form>-->
+    <p class="contact-text">Message me via <a target="_blank" href="https://www.instagram.com/_byml_x/">Instagram</a> or <a target="_blank" href="https://www.facebook.com/profile.php?id=100089472366679">Facebook</a> or contact me at <a href="tel:07472682614">07472 682614</a></p>
     </section>
 
     <section class="map-sec">
@@ -200,6 +203,32 @@
   <footer>
     <p>&copy; 2025 Nails, Aesthetics & Training By ML</p>
   </footer>
+  <!--<script>
+        document.getElementById('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('submit-btn').textContent = "Please Wait";
+
+        const form = e.target;
+        const data = new URLSearchParams();
+        data.append('name', form.name.value);
+        data.append('email', form.email.value);
+        data.append('message', form.message.value);
+
+        fetch("https://script.google.com/macros/s/AKfycbwMjtjx8ws_1bESfQpEs5j5Ei8nVzgJB0XwTbbRhf07jcCABjTp4qCQ5s1QedI7aVs/exec", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ photos: selected })
+        })
+        .then(res => res.json())
+        .then(data => {
+        if (data.status != "success") {
+            console.error(data.message);
+        }
+        })
+        .catch(err => console.error("Error:", err));
+
+        });
+    </script>-->
     <script src="script.js"></script>
 </body>
 </html>
