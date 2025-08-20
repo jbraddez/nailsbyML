@@ -108,20 +108,4 @@ background: #333b;
 .service-list{
     margin: 0 auto;
     flex-wrap:nowrap;
-    overflow-x: scroll;
-    padding: 1rem 2rem;
-    justify-content: space-evenly;
-}
-
-.service-card{
-    min-width: 200px;
-}
-
-.service-card h3{
-    text-align: center;
-    font-size: 1rem;
-}
-
-.gradient-img img{
-    object-position: top;
-}
+    overfl
