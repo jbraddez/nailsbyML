@@ -221,12 +221,7 @@
         })
         .then(res => res.text())
         .then(response => {
-          if (response === "success") {
-            document.getElementById('submit-btn').textContent = "Sent!";
-            setTimeout(() => {
-              form.reset();
-            document.getElementById('submit-btn').textContent = "Submit";
-            }, 500);
+          if (response === "success") {document.getElementById('submit-btn').textContent = "Sent!";setTimeout(() => {form.reset();document.getElementById('submit-btn').textContent = "Submit";}, 500);
           } else {
             console.error("Unexpected response:", response);
           }
