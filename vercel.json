@@ -4,8 +4,4 @@
       { "source": "/nails", "destination": "/nails.html" },
       { "source": "/beauty", "destination": "/beauty.html" },
       { "source": "/training", "destination": "/training.html" },
-      { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
-      { "source": "/index", "destination": "/" }
-    ]
-  }
-  
+      { "source": "/privacy-policy", "destination": "/privacy

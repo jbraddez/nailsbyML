@@ -176,13 +176,12 @@
       </a>
       <br>
       <h2>Got a question?</h2>
-       <!--<form id="form"> 
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Your Message"></textarea>
+       <form id="form"> 
+      <input id="name" type="text" placeholder="Full Name" required>
+      <input id="email" type="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Your Message"></textarea>
       <button type="submit" id="submit-btn" class="btn-primary">Submit</button>
-    </form>-->
-    <p class="contact-text">Message me via <a target="_blank" href="https://www.instagram.com/_byml_x/">Instagram</a> or <a target="_blank" href="https://www.facebook.com/profile.php?id=100089472366679">Facebook</a> or contact me at <a href="tel:07472682614">07472 682614</a></p>
+    </form>
     </section>
 
     <section class="map-sec">
@@ -205,8 +204,8 @@
     <p>&copy; 2025 By ML | Nails • Beauty • Training</p>
     <a style="color: #555;" href="/privacy-policy">Privacy Policy</a>
   </footer>
-  <!--<script>
-        document.getElementById('form').addEventListener('submit', function(e) {
+  <script>
+       document.getElementById('form').addEventListener('submit', function(e) {
         e.preventDefault();
         document.getElementById('submit-btn').textContent = "Please Wait";
 
@@ -216,21 +215,26 @@
         data.append('email', form.email.value);
         data.append('message', form.message.value);
 
-        fetch("https://script.google.com/macros/s/AKfycbwMjtjx8ws_1bESfQpEs5j5Ei8nVzgJB0XwTbbRhf07jcCABjTp4qCQ5s1QedI7aVs/exec", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ photos: selected })
+        fetch("https://script.google.com/macros/s/AKfycbzeUykTOq4PXjh9GRXkvptaURmxadS50Q-qsuthVzDe9G-vvL-EwEfkeEx2NM5X0jSecQ/exec", {
+          method: "POST",
+          body: data
         })
-        .then(res => res.json())
-        .then(data => {
-        if (data.status != "success") {
-            console.error(data.message);
-        }
+        .then(res => res.text())
+        .then(response => {
+          if (response === "success") {
+            document.getElementById('submit-btn').textContent = "Sent!";
+            setTimeout(() => {
+              form.reset();
+            document.getElementById('submit-btn').textContent = "Submit";
+            }, 500);
+          } else {
+            console.error("Unexpected response:", response);
+          }
         })
         .catch(err => console.error("Error:", err));
+      });
 
-        });
-    </script>-->
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
